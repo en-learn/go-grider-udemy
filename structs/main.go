@@ -8,11 +8,10 @@ type person struct {
 }
 
 func main() {
-  // This is dependant on the order in which the fields
-  // are listed in the struct definition. Ugh!
-  // alex := person{"Alex", "Anderson"}
+  var alex person
 
-  alex := person{firstName: "Alex", lastName: "Anderson"}
-
+  alex.firstName = "Alex"
+  alex.lastName = "Anderson"
   fmt.Println(alex)
+  fmt.Printf("%+v", alex)
 }
