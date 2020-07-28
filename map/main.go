@@ -3,11 +3,18 @@ package main
 import "fmt"
 
 func main() {
-  colors := map[string]string{
-    "red": "#ff0000",
-    "green": "#00ff00",
-    "blue": "#0000ff",
-  }
+  // var colors map[string]string
+
+  colors := make(map[int]string)
+
+  // colors := map[string]string{
+  //   "red": "#ff0000",
+  //   "green": "#00ff00",
+  // }
+
+  colors[10] = "#ffffff"
+
+  delete(colors, 10)
 
   fmt.Println(colors)
 }
